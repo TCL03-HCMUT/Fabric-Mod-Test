@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "generic-zoom-mod",
+	"version": "${version}",
+	"name": "Generic Zoom Mod",
+	"description": "A mod meant to be a zoom mod",
+	"authors": [
+		"TCL03"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/generic-zoom-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.genericzoommod.GenericZoomMod"
+		],
+		"fabric-datagen": [
+			"name.genericzoommod.GenericZoomModDataGenerator"
+		],
+		"client": [
+			"name.genericzoommod.GenericZoomModClient"
+		]
+	},
+	"mixins": [
+		"generic-zoom-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
